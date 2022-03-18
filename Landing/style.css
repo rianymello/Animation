@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 11px;
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap:32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 30px;
+}
+
+.conteudo-principal{
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 110px;
+    margin-top: 110px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    color:#fff2e7;
+    text-shadow: 0.1em 0.1em 0.2em #2f2325;
+    font-size: 52px;
+    font-weight: 64px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    margin-bottom: 13px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color:#ecd6c4;
+    width: 160px;
+    height: 54px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #2f2325;
+    text-shadow:  0.1em 0.1em 0.2em #fff2e7;
+} 
+
+
+
+.conteudo-secundario-escrito {
+    height: 500px;
+    width: 500px;
+    background-color: #855a51;
+    margin-left: 117px;
+    z-index: -1;
+    padding: 60px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudo-secundario-imagem {
+    width: 600px;
+    height: auto;
+    margin-left:-45px;
+}
+
+.titulo-secundario {
+    font-family: 'Righteous', cursive;
+    color: #fff2e7;
+    margin-bottom: 10px;
+}
+
+.paragrafo-secundario {
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    line-height:28px;
+}
+
+.pezinho {
+    background-color: #855a51;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.cabecalho-menu-item {
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.cabecalho-menu-item::after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      height: 0;
+      width: 0;
+      background-color:#fff2e7;
+      color: #fff2e7;
+      left: 50%;
+      transform: translate(-50%);
+      transition: width 0.2s, height 0.2s;
+}
+
+.cabecalho-menu-item:hover::after {
+    width: 100%;
+    height: 2.5px;
+  }
