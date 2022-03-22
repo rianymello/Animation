@@ -1,0 +1,10 @@
+.imagem-servicos {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.servico-um , .servico-dois , .servico-tres {
+    width: 200px;
+    height: 200%;
+}
+
