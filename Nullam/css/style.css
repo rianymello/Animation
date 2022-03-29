@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-image:url("back.jpg") ;
+    background-color: black;
 }
 .logo {
     width: 50px;
@@ -18,9 +18,9 @@ body {
 
 .conteudo-principal {
     display:flex;
-     flex-direction: row;
-    margin-top: 100px; 
-     display: flex;
+    flex-direction: row;
+    margin-top: 70px; 
+    display: flex;
     justify-content: center;
 }
 
