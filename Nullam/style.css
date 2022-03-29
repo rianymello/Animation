@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image:url("back.jpg") ;
+}
+.logo {
+    width: 50px;
+}
+.logovd {
+    max-width: 122px;
+    background-color: #000;
+}
+
+.conteudo-principal {
+    display:flex;
+     flex-direction: row;
+    margin-top: 100px; 
+     display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin:50px;
+    color:white;
+}
+.animated-border {
+    width: 400px;
+    height: 190px;
+    background: #de0d9c;
+    position: absolute;
+    animation: rotate 4s infinite ease-in-out;
+}
+
+.corner {
+    width: 198px;
+    height: 198px;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 180px;
+    height: 180px;
+    background: #000;
+    z-index: 2;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    border: #de0d9c 2px solid ;
+
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
